@@ -36,3 +36,9 @@ Preview e desenvolvimento continuam ambientes separados. As variáveis de produ�
 O banco local PGlite fica em `.data/vieira`; o banco de produção é independente. O bootstrap de produção cadastra serviços, conteúdo e o case do próprio site como demonstração técnica. Clientes, depoimentos e resultados comerciais fictícios não são criados.
 
 As imagens do portfólio aceitam URLs ou arquivos versionados em `public/`. Upload binário continua dependendo de um adaptador de armazenamento. Analytics só carrega quando IDs são configurados e há consentimento.
+
+## Dependências de produção
+
+A checagem inicial de publicação identificou os avisos do Next.js publicados em 22 de outubro. Next.js, `@next/env` e `eslint-config-next` foram atualizados para **16.4.2**, mantendo React 19.3. A auditoria `npm audit --omit=dev` voltou a reportar zero vulnerabilidades de produção. O limite de segurança do workflow foi preservado.
+
+Referências oficiais: [Image Optimization](https://github.com/advisories/GHSA-2464-fhr4-w9xw), [Server Actions](https://github.com/advisories/GHSA-p3m5-59mp-jv5r) e [Cache Components](https://github.com/advisories/GHSA-673q-mjm6-r5xr).

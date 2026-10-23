@@ -14,7 +14,7 @@ Site institucional, portfólio, captação de projetos, mini CRM e CMS em uma ap
 
 ## Stack e arquitetura
 
-Next.js 16.3.8 (App Router), React 19.3, TypeScript, CSS com tokens próprios, Lucide, Zod, Drizzle e PostgreSQL. O driver Neon HTTP atende a produção serverless. PGlite fornece PostgreSQL local para desenvolvimento e testes, com o mesmo schema SQL.
+Next.js 16.4.2 (App Router), React 19.3, TypeScript, CSS com tokens próprios, Lucide, Zod, Drizzle e PostgreSQL. O driver Neon HTTP atende a produção serverless. PGlite fornece PostgreSQL local para desenvolvimento e testes, com o mesmo schema SQL.
 
 O site usa Server Components para conteúdo e pequenos componentes de cliente para interação. O painel consome Route Handlers protegidos. A autorização acontece em cada operação; o layout também protege a navegação administrativa. O CMS é consultado por requisição, sem cache público persistente que atrase publicações.
 
@@ -120,7 +120,7 @@ Cobertura: páginas públicas, SEO, menu e foco mobile, temas, 320–2560 px, wi
 
 ## Publicar
 
-Veja [o guia de deploy](docs/DEPLOY.md). A aplicação está preparada para GitHub e Vercel, mas contas remotas, domínio e banco Neon exigem configuração do responsável. Não há credenciais de terceiros incluídas no repositório.
+Veja [o guia de deploy](docs/DEPLOY.md) para configurar novos ambientes. A produção descrita abaixo usa a integração GitHub/Vercel e PostgreSQL Neon. Não há credenciais de terceiros incluídas no repositório.
 
 ## Ambiente de produção
 
