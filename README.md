@@ -122,6 +122,15 @@ Cobertura: páginas públicas, SEO, menu e foco mobile, temas, 320–2560 px, wi
 
 Veja [o guia de deploy](docs/DEPLOY.md). A aplicação está preparada para GitHub e Vercel, mas contas remotas, domínio e banco Neon exigem configuração do responsável. Não há credenciais de terceiros incluídas no repositório.
 
+## Ambiente de produção
+
+- Site: [vieira-systems.vercel.app](https://vieira-systems.vercel.app)
+- Administração: [acesso ao painel](https://vieira-systems.vercel.app/admin/login)
+- Código: [VieiraC18/vieira](https://github.com/VieiraC18/vieira)
+- Contato: **+55 31 99499-4744** e **vieirasystems@gmail.com**.
+
+Vercel e PostgreSQL Neon usam a região de São Paulo. As credenciais administrativas de produção são diferentes das locais e ficam somente no arquivo ignorado `.env.production.local` deste workspace. Consulte [a configuração de produção](docs/PRODUCTION.md) para operação e publicação de alterações.
+
 ## Documentação
 
 - [Arquitetura e segurança](docs/ARCHITECTURE.md)
